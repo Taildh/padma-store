@@ -1,0 +1,113 @@
+.profile-main-wrapper {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 25px 30px 50px 30px;
+
+    .profile-main-header {
+        p {
+            letter-spacing: -0.017em;
+            margin-bottom: 0;
+            @include styleText(16px, 600, #2c343d, 24px);
+        }
+
+        span {
+            @include styleText(12px, normal, #9c9c9c, 24px);
+
+            a {
+                margin-left: 5px;
+                text-decoration: underline;
+                @include styleText(13px, bold, #246dce, 24px);
+            }
+        }
+    }
+
+    .profile-main-body {
+        .form-profile {
+            padding-top: 10px;
+            padding-right: 50px;
+            position: relative;
+
+            label {
+                @include styleText(14px, normal, #646464, 18px);
+            }
+        }
+
+        button {
+            padding: 0 50px;
+            border-radius: 4px;
+            border: none;
+            background-color: #246dce;
+            @include styleText(16px, bold, #ffffff, 46px);
+        }
+
+        .form-border-right {
+            &::after {
+                position: absolute;
+                content: "";
+                height: 85%;
+                width: 1px;
+                background-color: #dfdfdf;
+                top: 5%;
+                right: 0;
+            }
+        }
+
+        .change-password-form {
+            padding-bottom: 200px;
+        }
+
+        .upload-image-wrapper {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 30px;
+            text-align: center;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            input[type="file"] {
+                display: none;
+            }
+
+            .upload-image {
+                padding: 0 30px;
+                border: 1px solid #246dce;
+                border-radius: 4px;
+                @include styleText(16px, bold, #246dce, 46px);
+            }
+
+            span {
+                @include styleText(12px, normal, #9c9c9c, 20px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    // .profile-sidebar-content {
+    //     .sidebar-list-item {
+    //         display: flex;
+    //         flex-direction: row !important;
+
+    //         li {
+    //             img {
+    //                 display: none;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .profile-main-wrapper {
+        width: 100%;
+        padding: 25px 10px 20px 10px;
+    }
+}

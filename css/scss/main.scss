@@ -1,0 +1,46 @@
+@import "mixin";
+@import "variables";
+
+@import "share/footer";
+@import "share/breadcrumb";
+@import "share/header";
+@import "share/profile-sidebar";
+
+@import "sections/nav";
+@import "sections/banner";
+@import "sections/products";
+@import "sections/left-sidebar";
+@import "sections/cart";
+@import "sections/profile";
+@import "sections/order-history";
+@import "sections/notification";
+@import "sections/modal";
+@import "sections/detail";
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sfpro;
+}
+
+
+body {
+    @include font($font-size-base * 0.875);
+}
+
+main {
+    background-color: #f8fafd;
+    padding-bottom: 55px;
+    position: relative;
+}
+
+@font-face {
+    font-family: sfpro;
+    src: url("../../fonts/SF-Pro-Display-Medium.otf");
+}
+
+@media screen and (max-width: 767.98px) {
+    .container {
+        max-width: 100%;
+    }
+}

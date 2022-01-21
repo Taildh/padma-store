@@ -1,0 +1,165 @@
+.order-tab-wrapper {
+    .title {
+        .order-tab {
+            background-color: #f8fafd;
+            display: flex;
+            gap: 50px;
+            list-style-type: none;
+            padding-left: 15px;
+
+            li {
+                cursor: pointer;
+                padding: 9px 0;
+                a {
+                    line-height: 24px;
+                    @include styleText(14px, normal, #2c343d, 24px);
+                }
+            }
+
+            .active {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    content: "";
+                    height: 1px;
+                    width: 100%;
+                    background-color: #246dce;
+                }
+
+                a {
+                    color: #246dce;
+                }
+            }
+        }
+    }
+}
+
+.order-list-item {
+    margin-top: 15px;
+
+    .cart-items {
+        .item {
+            align-items: center;
+
+            &-left {
+                align-items: center;
+
+                &-info {
+                    max-width: 220px;
+
+                    p {
+                        @include styleText(16px, normal, #ff5722, 18px);
+
+                        span {
+                            margin-left: 10px;
+                            @include styleText(14px, normal, #2c343d, 18px);
+                        }
+                    }
+                }
+            }
+
+            &-right {
+                &-price {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    button {
+                        padding: 0 50px;
+                        background-color: transparent;
+                        outline: none;
+                        border: 1px solid #246dce;
+                        border-radius: 4px;
+                        @include styleText(16px, bold, #246dce, 46px);
+                    }
+
+                    p {
+                        span {
+                            margin-right: 13px;
+                            @include styleText(14px, 600, #2c343d, 18px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .order-tab-wrapper {
+        .title {
+            .order-tab {
+                li {
+                    cursor: pointer;
+                    padding: 9px 0;
+                    a {
+                        line-height: 24px;
+                        @include styleText(14px, normal, #2c343d, 24px);
+                    }
+                }
+
+                .active {
+                    &::after {
+                        display: none;
+                    }
+                
+
+                    a {
+                        color: #246dce;
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            left: 0;
+                            top: 28px;
+                            content: "";
+                            height: 2px;
+                            width: 100%;
+                            background-color: #246dce;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .order-list-item {
+        .cart-items {
+            margin-top: 35px;
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 25px;
+
+                &-left {
+                    align-items: flex-end;
+                    gap: 50px;
+
+                    &-info {
+                        a {
+                            @include styleText(14px, 600, 2c343d, 24px);
+                        }
+
+                        p {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                &-right {
+                    width: 100%;
+                    &-price {
+                        width: 100%;
+                        align-items: center;
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

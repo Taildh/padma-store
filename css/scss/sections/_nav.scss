@@ -1,0 +1,34 @@
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+
+    .icon-home {
+        img {
+            max-width: 34px;
+        }
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        overflow: hidden;
+
+        li {
+            margin: 0 20px;
+            a {
+                @include styleText(14px, 600, #2C343D, 18px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .icon-home {
+        display: none;
+    }
+}

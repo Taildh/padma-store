@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="hotline">
+                        <img src="./images/phone-call.svg" alt=""> Hotline: <a href="#">0987654321</a>
+                    </div>
+                    <span class="title">SIÊU HOT GIẢM NGAY 30K ĐƠN TỪ 150K</span>
+                    <div class="navbar-links">
+                        <li><img src="./images/bell.svg" alt=""> <span>Thông báo</span>
+                            <div class="count-notify">2</div>
+                        </li>
+                        <li class="dropdown" aria-expanded="false" data-toggle="dropdown" id="dropdown">
+                            <img src="./images/user.svg" alt=""><span>HuuTai</span><i class="fa fa-chevron-down"></i>
+                            <div class="dropdown-menu-header dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="#"><img src="./images/icon-user.svg" alt=""> Tài khoản
+                                    của tôi</a>
+                                <a class="dropdown-item" href="#"><img src="./images/logout.svg" alt=""> Đăng xuất</a>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-wrapper">
+                    <a href="index.html" class="logo"><img src="./images/logo.svg" alt=""></a>
+                    <div class="header-search col-lg-8 col-md-12">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                        <button class="icon-search">
+                            <img src="./images/search.svg" alt="">
+                        </button>
+                    </div>
+                    <a href="#" class="cart">
+                        <img src="./images/cart.svg" alt="">
+                        <div class="count-notify">2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="breadcrumb ">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="#">Trang chủ <i class="fa fa-chevron-right"></i></a></li>
+                    <li><a href="#">Quản lý tài khoản </a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="profile-sidebar-wrapper">
+                            <div class="profile-sidebar-header">
+                                <img src="./images/banner.png" alt="" class="avatar rounded-circle">
+                                <div class="header-info">
+                                    <p>Emma Waston</p>
+                                    <span>Thành viên mới</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="profile-sidebar-content">
+                                <div class="sidebar-list-item">
+                                    <li><img src="./images/icon-user.svg" alt=""><a href="profile.html">Tài khoản của tôi</a></li>
+                                    <li><img src="./images/icon-order.svg" alt=""><a href="order-history.html">Đơn mua</a></li>
+                                    <li><img src="./images/icon-eye.svg" alt=""><a href="order-history.html">Sản phẩm đã xem</a></li>
+                                    <li><img src="./images/icon-bell.svg" alt=""><a href="notifications.html">Thông báo</a></li>
+                                </div>
+                            </div>
+                            <div class="profile-toggle">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="profile-main-wrapper">
+                            <div class="profile-main-header">
+                                <p>Tài khoản của tôi</p>
+                                <span>Quản lý thông tin hồ sơ bảo mật tài khoản <a href="change-password.html"
+                                        class="change-password"> Đổi mật khẩu</a></span>
+                            </div>
+                            <hr>
+                            <div class="profile-main-body">
+                                <form class="form-profile-wrapper form-row">
+                                    <div class="col-md-8 col-12">
+                                        <div class="form-profile form-border-right">
+                                            <div class="row form-group">
+                                                <label class="col-4">Họ và tên</label>
+                                                <input type="text" class="form-control shadow-none col-8">
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-4">Email</label>
+                                                <input type="text" class="form-control shadow-none col-8">
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-4">Số điện thoại</label>
+                                                <input type="text" class="form-control shadow-none col-8">
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-4">Địa chỉ</label>
+                                                <input type="text" class="form-control shadow-none col-8">
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-4">Ngày sinh</label>
+                                                <input type="date" class="form-control shadow-none col-8">
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-4">Giới tính</label>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios1" value="option1" checked>
+                                                    <label class="form-check-label" for="exampleRadios1">
+                                                        Nam
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                    <label class="form-check-label" for="exampleRadios2">Nữ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <div class="upload-image-wrapper">
+                                            <img src="./images/default.png" alt="">
+                                            <div>
+                                                <label for="file-upload" class="upload-image">Chọn ảnh</label>
+                                                <input type="file" id="file-upload">
+                                            </div>
+                                            <span>Dụng lượng file tối đa 1 MB Định dạng:.JPEG, .PNG</span>
+                                        </div>
+                                    </div>
+                                    <div class="offset-md-2 offset-4">
+                                        <button class="btn">Lưu</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="row">
+                    <div class="footer-col col-lg-4 col-sm-12">
+                        <a href="#">
+                            <img src="./images/logo-footer.svg" alt="">
+                        </a>
+                        <div class="social-wrap d-flex">
+                            <button class="btn newsletter-btn">ĐĂNG KÝ NHẬN NEWSLETTER</button>
+                            <div class="social ">
+                                <img src="./images/twitter.svg" alt="">
+                                <img src="./images/linkedin.svg" alt="">
+                                <img src="./images/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col col-lg-4 col-sm-12">
+                        <h1 class="footer-title-heading">THÔNG TIN CÔNG TY</h1>
+                        <p class="footer-short-desc">Địa chỉ: 124 Điện Biên Phủ, Phường Đakao, Quận 1, TPHCM</p>
+                        <p class="footer-short-desc">Điện thoại: +84982663849 - Email: lienhe@elle.vn</p>
+                        <p class="footer-short-desc"> Chịu trách nhiệm quản lý nội dung: Nguyễn Thị Hồng Hoa</p>
+                    </div>
+                    <div class="footer-col col-lg-2 col-6">
+                        <h1 class="footer-title-heading">DỊCH VỤ</h1>
+                        <p class="footer-link"><a href="#">Chăm sóc da</a></p>
+                        <p class="footer-link"><a href="#">Điều trị bệnh da</a></p>
+                        <p class="footer-link"><a href="#">Sản phẩm</a></p>
+                    </div>
+                    <div class="footer-col col-lg-2 col-6">
+                        <h1 class="footer-title-heading">CHÍNH SÁCH</h1>
+                        <p class="footer-link"><a href="#">Chính sách bảo mật</a></p>
+                        <p class="footer-link"><a href="#">Câu hỏi thường gặp</a></p>
+                        <p class="footer-link"><a href="#">Liên hệ bác sĩ</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+#detail {
+    background-color: $white-color;
+}
+
+svg.star-fill {
+    color: $star-fill;
+    stroke: $star-fill;
+}
+
+svg.star-none {
+    color: $star-none;
+    stroke: $star-none;
+}
+.product-detail {
+    
+    &-galery {
+        &__slider-nav {
+            display: flex;
+
+            img {
+                margin: 0 0.5rem;
+            }
+        }
+    }
+
+    &__column {
+        @media screen and (min-width: $breakpoint) {
+            border-right: 1px solid $second-background-color;
+        }
+    }
+
+    &-description {
+        &__title {
+            color: $text-black;
+            font-size: 1.25rem;
+        }
+
+        &__short-preview {
+            display: flex;
+            
+            a {
+                display: flex;
+                text-decoration: none;
+            }
+
+            &__point-rating {
+                padding-left: 0.5rem;
+                padding-right: 1rem;
+                color: $second-color;
+            }
+
+            &__sold-count {
+                padding-left: 1rem;
+                color: $text-gray;
+                border-left: $text-gray solid 1px;
+            }
+        }
+
+        &__order-info {
+            margin: 0 -15px; //gutter bootstrap
+            padding: 1rem 2rem;
+            background-color: $gray-lighter;
+
+            label {
+                min-width: 7.5rem;
+            }
+
+            &__price {
+                color: $second-color;
+                font-size: 1.875rem;
+                padding-left: 0.5rem;
+            }
+
+            &__malnufacture {
+                color: $text-gray;
+                margin-bottom: 0.5rem;
+            }
+
+            &__order-quantity {
+                display: flex;
+                color: $text-gray;
+
+                input[type=number]::-webkit-inner-spin-button, 
+                input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+                }
+
+                input {
+                    max-width: 3.5rem;
+                    min-width: 2.5rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__short-description {
+            color: $text-gray;
+        }
+        
+    }
+
+    &-suggestion {
+        overflow: auto;
+        white-space: nowrap;
+        display: inline-flex;
+
+        @media screen and (min-width: $breakpoint) {
+            white-space: normal;
+            display: block;
+        }
+    }
+    &-suggestion::-webkit-scrollbar {
+        display: none;
+    }
+
+    &-info {
+        padding: 0 10px;
+        &__title {
+            text-transform: uppercase;
+            background-color: $gray-lighter;
+            padding: 0.5rem;
+            margin: 0 -15px; //gutter bootstrap
+            font-size: 1rem;
+            font-weight: 700;
+            color: $primary-color;
+
+            @media screen and (min-width: $breakpoint) {
+                margin-right: 0;
+            }
+        }
+
+        &-detail__attributes {
+            display: flex;
+            color: $text-gray;
+            font-size: 0.8125rem;
+
+            label {
+                min-width: 7.5rem;
+            }
+        }
+        &-content {
+            h2, h3, h4 {
+                font-size: 1.5rem;
+            }
+
+            img {
+                max-width: 100%;
+                width: 100%;
+                padding: 1rem;
+            }
+
+        }
+        
+        .show {
+            height: auto;
+        }
+
+        .hide {
+            overflow: hidden;
+            height: $content-length;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        &-input {
+            background-color: $gray-lighter;
+
+            #text-review {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            @media screen and (min-width: $breakpoint) {
+                margin-right: 0;
+            }
+        }
+
+        &-reviewer {
+            display: flex;
+
+            &__avatar {
+                width: 2.5rem;
+                height: 2.5rem;
+                
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            &-info {
+
+                &__name {
+                    color: $primary-color;
+                }
+
+                &__type-member {
+                    color: $text-gray;
+                    font-size: 0.75rem;
+                }
+
+                &__review {
+
+                    &__images {
+                        overflow: auto;
+                        white-space: nowrap;
+                        display: inline-flex;
+                        
+                        img {
+                            width: 5rem;
+                            max-width: 100%;
+                            margin-right: 0.5rem;
+                        }
+                    }
+
+                    &__images::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+                &__interaction {
+                    display: flex;
+                    color: $text-gray;
+                    font-size: 0.75rem;
+
+                    &__like:hover {
+                        color: $primary-color;
+                        cursor: pointer;
+                    }
+                    
+                    &__like {
+                        .liked {
+                            color: $star-fill;
+                            stroke: $star-fill;
+                        }
+                    }
+
+                    &__comment {
+                        color: $primary-color;
+                    }
+
+                    &__comment:hover {
+                        color: $second-color;
+                    }
+                }
+            }
+
+            &__pagination {
+                li {
+                    margin: 0 0.125rem;
+                }
+            }
+        }
+    }
+}
+
+.rate:not(:checked) > input {
+    display: none;
+}
+.rate:not(:checked) > label {
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size: 2.5rem;
+    color:$star-none;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: $star-fill;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: $primary-color
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c9a72f;
+}
+
+.slick-slide {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+.slick-current {
+    filter: none;
+    opacity: 1;
+}

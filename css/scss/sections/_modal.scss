@@ -1,0 +1,55 @@
+.frame {
+    max-width: 80%;
+    margin: 2rem auto;
+
+    @media screen and (min-width: $breakpoint) {
+        max-width: 60%;
+    }
+}
+
+.frame-content {
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.frame-content::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header-block {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: solid 1px $second-background-color;
+}
+
+.btn-close {
+    position: absolute;
+    margin: 1rem;
+    top: 0;
+    right: 0;
+}
+
+.modal-title {
+    color: $primary-color;
+    text-transform: uppercase;
+}
+
+// FAQ
+h2 {
+    font-size: 1.25rem;
+}
+
+.faq-question {
+    background-color: $second-background-color;
+    color: $text-black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    color: $primary-color;
+}
+
+.faq-answer {
+    color: $text-gray;
+}

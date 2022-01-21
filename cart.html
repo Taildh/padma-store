@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gio hang</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="hotline">
+                        <img src="./images/phone-call.svg" alt=""> Hotline: <a href="#">0987654321</a>
+                    </div>
+                    <span class="title">SIÊU HOT GIẢM NGAY 30K ĐƠN TỪ 150K</span>
+                    <div class="navbar-links">
+                        <li><img src="./images/bell.svg" alt=""> <span>Thông báo</span>
+                            <div class="count-notify">2</div>
+                        </li>
+                        <li class="dropdown" aria-expanded="false" data-toggle="dropdown" id="dropdown">
+                            <img src="./images/user.svg" alt=""><span>HuuTai</span><i class="fa fa-chevron-down"></i>
+                            <div class="dropdown-menu-header dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="#"><img src="./images/icon-user.svg" alt=""> Tài khoản
+                                    của tôi</a>
+                                <a class="dropdown-item" href="#"><img src="./images/logout.svg" alt=""> Đăng xuất</a>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-wrapper">
+                    <a href="index.html" class="logo"><img src="./images/logo.svg" alt=""></a>
+                    <div class="header-search col-lg-8 col-md-12">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                        <button class="icon-search">
+                            <img src="./images/search.svg" alt="">
+                        </button>
+                    </div>
+                    <a href="#" class="cart">
+                        <img src="./images/cart.svg" alt="">
+                        <div class="count-notify">2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="breadcrumb ">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <span>Giỏ hàng</span>
+                </ul>
+            </div>
+        </section>
+        <section id="cart">
+            <div class="container">
+                <div class="cart-content">
+                    <div class="cart-items">
+                        <div class="item">
+                            <div class="item-left">
+                                <img src="./images/cart-image.png" alt="" class="item-left-image">
+                                <a href="#">Zo Skin Health Recovery Crème 50ml - Kem phục hồi da </a>
+                            </div>
+                            <div class="item-right">
+                                <div class="quantity">
+                                    <div class="plus">+</div>
+                                    <input type="text" min="1">
+                                    <div class="minus">-</div>
+                                </div>
+                                <div class="item-right-price">
+                                    <img src="./images/trash.svg" alt="" class="icon-trash">
+                                    <p>295.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cart-coupon">
+                        <div class="cart-coupon-item">
+                            <span class="title">Mã giảm giá</span>
+                            <form action="" class="form-coupon">
+                                <input type="text">
+                                <button>Sử dụng</button>
+                            </form>
+                        </div>
+                        <div class="cart-coupon-item">
+                            <span class="title">Giảm giá</span>
+                            <span class="money-discount">55.000 đ</span>
+                        </div>
+                        <div class="cart-coupon-item">
+                            <span class="title">Cần thanh toán</span>
+                            <span class="money-total">1230.1321 đ</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="cart-form-wrapper">
+                        <div class="title">
+                            <h3>Thông tin người mua</h3>
+                        </div>
+                        <form action="#" class="cart-form">
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <input type="text" class="form-control shadow-none" placeholder="Tên của bạn">
+                                </div>
+                                <div class="form-group col-6">
+                                    <input type="text" class="form-control shadow-none" placeholder="Số điện thoai">
+                                </div>
+                                <div class="form-group col-12">
+                                    <input type="text" class="form-control shadow-none" placeholder="Địa chỉ nhận hàng">
+                                </div>
+                                <div class="form-group col-12">
+                                    <input type="text" class="form-control shadow-none" placeholder="Ghi chú">
+                                </div>
+                                <div class="form-group col-12">
+                                    <textarea name="" id="" cols="30" rows="5" class="form-control shadow-none"
+                                        placeholder="Tin nhắn"></textarea>
+                                </div>
+                            </div>
+                            <div class="btn-cart col-lg-6 col-md-8 col-12 offset-lg-6 offset-md-4">
+                                <button class="btn-orange">Thanh toán khi nhận hàng</button>
+                                <button class="btn-blue">Thanh toán online</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="row">
+                    <div class="footer-col col-lg-4 col-sm-12">
+                        <a href="#">
+                            <img src="./images/logo-footer.svg" alt="">
+                        </a>
+                        <div class="social-wrap d-flex">
+                            <button class="btn newsletter-btn">ĐĂNG KÝ NHẬN NEWSLETTER</button>
+                            <div class="social ">
+                                <img src="./images/twitter.svg" alt="">
+                                <img src="./images/linkedin.svg" alt="">
+                                <img src="./images/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col col-lg-4 col-sm-12">
+                        <h1 class="footer-title-heading">THÔNG TIN CÔNG TY</h1>
+                        <p class="footer-short-desc">Địa chỉ: 124 Điện Biên Phủ, Phường Đakao, Quận 1, TPHCM</p>
+                        <p class="footer-short-desc">Điện thoại: +84982663849 - Email: lienhe@elle.vn</p>
+                        <p class="footer-short-desc"> Chịu trách nhiệm quản lý nội dung: Nguyễn Thị Hồng Hoa</p>
+                    </div>
+                    <div class="footer-col col-lg-2 col-6">
+                        <h1 class="footer-title-heading">DỊCH VỤ</h1>
+                        <p class="footer-link"><a href="#">Chăm sóc da</a></p>
+                        <p class="footer-link"><a href="#">Điều trị bệnh da</a></p>
+                        <p class="footer-link"><a href="#">Sản phẩm</a></p>
+                    </div>
+                    <div class="footer-col col-lg-2 col-6">
+                        <h1 class="footer-title-heading">CHÍNH SÁCH</h1>
+                        <p class="footer-link"><a href="#">Chính sách bảo mật</a></p>
+                        <p class="footer-link"><a href="#">Câu hỏi thường gặp</a></p>
+                        <p class="footer-link"><a href="#">Liên hệ bác sĩ</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

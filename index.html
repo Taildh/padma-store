@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="hotline">
+                        <img src="./images/phone-call.svg" alt=""> Hotline: <a href="#">0987654321</a>
+                    </div>
+                    <span class="title">SIÊU HOT GIẢM NGAY 30K ĐƠN TỪ 150K</span>
+                    <div class="navbar-links">
+                        <li><img src="./images/bell.svg" alt=""> <a href="notifications.html">Thông báo</a>
+                            <div class="count-notify">2</div>
+                        </li>
+                        <li class="dropdown" aria-expanded="false" data-toggle="dropdown" id="dropdown">
+                            <img src="./images/user.svg" alt=""><span>HuuTai</span><i class="fa fa-chevron-down"></i>
+                            <div class="dropdown-menu-header dropdown-menu" aria-labelledby="dropdown">
+                                <a class="dropdown-item" href="prof"><img src="./images/icon-user.svg" alt=""> Tài khoản
+                                    của tôi</a>
+                                <a class="dropdown-item" href="#"><img src="./images/logout.svg" alt=""> Đăng xuất</a>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-wrapper">
+                    <a href="index.html" class="logo"><img src="./images/logo.svg" alt=""></a>
+                    <div class="header-search col-lg-8 col-md-12">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm">
+                        <button class="icon-search">
+                            <img src="./images/search.svg" alt="">
+                        </button>
+                    </div>
+                    <a href="cart.html" class="cart">
+                        <img src="./images/cart.svg" alt="">
+                        <div class="count-notify">2</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="nav">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="icon-home">
+                        <img src="./images/home.svg" alt="">
+                    </a>
+                    <div class="main-nav">
+                        <li><a href="category.html">Sữa rửa mặt</a></li>
+                        <li><a href="category.html">Tẩy trang</a></li>
+                        <li><a href="category.html">Nước hoa hồng</a></li>
+                        <li><a href="category.html">Sữa rửa mặt</a></li>
+                        <li><a href="category.html">Tẩy trang</a></li>
+                        <li><a href="category.html">Nước hoa hồng</a></li>
+                        <li><a href="category.html">Sữa rửa mặt</a></li>
+                        <li><a href="category.html">Tẩy trang</a></li>
+                        <li><a href="category.html">Nước hoa hồng</a></li>
+                        <li><a href="category.html">Sữa rửa mặt</a></li>
+                        <li><a href="category.html">Tẩy trang</a></li>
+                        <li><a href="category.html">Nước hoa hồng</a></li>
+                        <li><a href="category.html">Sữa rửa mặt</a></li>
+                        <li><a href="category.html">Tẩy trang</a></li>
+                        <li><a href="category.html">Nước hoa hồng</a></li>
+                        <li><a href="category.html">Sữa rửa mặt</a></li>
+                        <li><a href="category.html">Tẩy trang</a></li>
+                        <li><a href="category.html">Nước hoa hồng</a></li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="banner">
+            <div class="banner-wrapper">
+                <img src="./images/banner.png" alt="">
+                <img src="./images/banner.png" alt="">
+            </div>
+        </section>
+        <section id="products">
+            <div class="container">
+                <div class="products-sale">
+                    <div class="title">
+                        <span>Khuyến mãi hot <img src="./images/thunderbolt.svg" alt=""></span>
+                    </div>
+                    <div class="products-list layout-5">
+                        <div class="product on-sale">
+                            <div class="product-image border-blue">
+                                <a href="#">
+                                    <img src="./images/product.png" alt="">
+                                </a>
+                                <div class="sale-desc">10% giảm</div>
+                            </div>
+                            <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                Mụn</a>
+                            <div class="product-price">
+                                <span class="price">55.300đ</span>
+                                <span class="sales">Đã bán 23</span>
+                            </div>
+                            <div class="progress product-progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="product on-sale">
+                            <div class="product-image border-blue">
+                                <a href="#">
+                                    <img src="./images/product.png" alt="">
+                                </a>
+                                <div class="sale-desc">10% giảm</div>
+                            </div>
+                            <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                Mụn</a>
+                            <div class="product-price">
+                                <span class="price">55.300đ</span>
+                                <span class="sales">Đã bán 23</span>
+                            </div>
+                            <div class="progress product-progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="product on-sale">
+                            <div class="product-image border-blue">
+                                <a href="#">
+                                    <img src="./images/product.png" alt="">
+                                </a>
+                                <div class="sale-desc">10% giảm</div>
+                            </div>
+                            <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                Mụn</a>
+                            <div class="product-price">
+                                <span class="price">55.300đ</span>
+                                <span class="sales">Đã bán 23</span>
+                            </div>
+                        </div>
+                        <div class="product on-sale">
+                            <div class="product-image border-blue">
+                                <a href="#">
+                                    <img src="./images/product.png" alt="">
+                                </a>
+                                <div class="sale-desc">10% giảm</div>
+                            </div>
+                            <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                Mụn</a>
+                            <div class="product-price">
+                                <span class="price">55.300đ</span>
+                                <span class="sales">Đã bán 23</span>
+                            </div>
+                        </div>
+                        <div class="product on-sale">
+                            <div class="product-image border-blue">
+                                <a href="#">
+                                    <img src="./images/product.png" alt="">
+                                </a>
+                                <div class="sale-desc">10% giảm</div>
+                            </div>
+                            <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                Mụn</a>
+                            <div class="product-price">
+                                <span class="price">55.300đ</span>
+                                <span class="sales">Đã bán 23</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="products-brands">
+                    <div class="products-list layout-5">
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-image">
+                                <a href="#">
+                                    <img src="./images/pb.png" alt="">
+                                </a>
+                            </div>
+                            <div class="brand-name">
+                                <img src="./images/br1.png" alt="" class="img-fluid  mx-auto d-block">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="products-tab-wrapper">
+                    <div class="title">
+                        <div class="product-tab tab-header" id="product-tab">
+                            <li><a id="tab-1">Chăm sóc da</a></li>
+                            <li><a id="tab-2">Chăm sóc tóc</a></li>
+                            <li><a id="tab-3">Chăm sóc móng</a></li>
+                        </div>
+                    </div>
+                    <div class="products-list-wrapper">
+                        <div class="products-list layout-5 product-tab-content global-tab-contents" data-tab="tab-1">
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-list layout-5 product-tab-content global-tab-contents" data-tab="tab-2">
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-list layout-5 product-tab-content global-tab-contents" data-tab="tab-3">
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                            <div class="product on-sale">
+                                <div class="product-image border-blue">
+                                    <a href="detail.html">
+                                        <img src="./images/product.png" alt="">
+                                    </a>
+                                    <div class="sale-desc">10% giảm</div>
+                                </div>
+                                <a href="detail.html" class="product-name">Mặt Nạ Đất Sét Kiehl’s Kiểm Soát Dầu Nhờn Và
+                                    Mụn</a>
+                                <div class="product-price">
+                                    <span class="price">55.300đ</span>
+                                    <span class="sales">Đã bán 23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="row">
+                    <div class="footer-col col-lg-4 col-sm-12">
+                        <a href="#">
+                            <img src="./images/logo-footer.svg" alt="">
+                        </a>
+                        <div class="social-wrap d-flex">
+                            <button class="btn newsletter-btn">ĐĂNG KÝ NHẬN NEWSLETTER</button>
+                            <div class="social ">
+                                <img src="./images/twitter.svg" alt="">
+                                <img src="./images/linkedin.svg" alt="">
+                                <img src="./images/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col col-lg-4 col-sm-12">
+                        <h1 class="footer-title-heading">THÔNG TIN CÔNG TY</h1>
+                        <p class="footer-short-desc">Địa chỉ: 124 Điện Biên Phủ, Phường Đakao, Quận 1, TPHCM</p>
+                        <p class="footer-short-desc">Điện thoại: +84982663849 - Email: lienhe@elle.vn</p>
+                        <p class="footer-short-desc"> Chịu trách nhiệm quản lý nội dung: Nguyễn Thị Hồng Hoa</p>
+                    </div>
+                    <div class="footer-col col-lg-2 col-6">
+                        <h1 class="footer-title-heading">DỊCH VỤ</h1>
+                        <p class="footer-link"><a href="#">Chăm sóc da</a></p>
+                        <p class="footer-link"><a href="#">Điều trị bệnh da</a></p>
+                        <p class="footer-link"><a href="#">Sản phẩm</a></p>
+                    </div>
+                    <div class="footer-col col-lg-2 col-6">
+                        <h1 class="footer-title-heading">CHÍNH SÁCH</h1>
+                        <p class="footer-link"><a href="#">Chính sách bảo mật</a></p>
+                        <p class="footer-link"><a href="#">Câu hỏi thường gặp</a></p>
+                        <p class="footer-link"><a href="#">Liên hệ bác sĩ</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
